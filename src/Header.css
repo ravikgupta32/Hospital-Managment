@@ -1,4 +1,4 @@
-.NavbarItems {
+.header {
   background: linear-gradient(
     90deg,
     rgb(110, 94, 254) 0%,
@@ -10,6 +10,15 @@
   align-items: center;
   font-size: 1.2rem;
 }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  background-color: #6d76f7;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
 .header_logo {
   display: flex;
   width: 75px;
@@ -17,14 +26,7 @@
   margin: 0 20px;
   margin-top: 1px;
 }
-.navbar-logo {
-  color: #ffffff;
-  justify-self: start;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.nav-menu {
+.header_nav {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
@@ -34,13 +36,26 @@
   justify-content: end;
   margin-right: 2rem;
 }
-.nav-links {
+.header_option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
 }
-.nav-links:hover {
+
+.header_option:hover {
   background-color: #6d76f7;
   border-radius: 4px;
   transition: all 0.2s ease-out;
+}
+.navbar-logo {
+  display: flex;
+  color: #ffffff;
+  justify-self: start;
+  display: flex;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-right: 50px;
 }

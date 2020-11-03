@@ -13,10 +13,9 @@ function Home() {
       <div className="body_text">
         <h1 className="intro_text">Welcome to our Hospital Website</h1>
       </div>
-      <div>
-        <button type="button" class="btn btn-primary btn-lg">
-          {" "}
-          Book your Appointment{" "}
+      <div className="index_button">
+        <button className="btn">
+          <a href="#">Book your Appointment</a>
         </button>
       </div>
     </div>
